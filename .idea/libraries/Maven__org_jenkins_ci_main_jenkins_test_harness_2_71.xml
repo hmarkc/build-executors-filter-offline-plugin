@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jenkins-ci.main:jenkins-test-harness:2.71">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/jenkins-ci/main/jenkins-test-harness/2.71/jenkins-test-harness-2.71.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/jenkins-ci/main/jenkins-test-harness/2.71/jenkins-test-harness-2.71-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/jenkins-ci/main/jenkins-test-harness/2.71/jenkins-test-harness-2.71-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

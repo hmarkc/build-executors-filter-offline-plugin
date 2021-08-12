@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Built-By: ch
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_292
+Extension-Name: build-executors
+Specification-Title: The Jenkins Plugins Parent POM Project
+Implementation-Title: build-executors
+Implementation-Version: 1.0-SNAPSHOT
+Group-Id: io.jenkins.plugins
+Short-Name: build-executors
+Long-Name: Build Executors
+Url: https://github.com/jenkinsci/build-executors-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.0-SNAPSHOT (private-61e40770-ch)
+Hudson-Version: 2.277.1
+Jenkins-Version: 2.277.1
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/build-executors-plugin
+

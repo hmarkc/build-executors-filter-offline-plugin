@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jenkins-ci:version-number:1.7">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/jenkins-ci/version-number/1.7/version-number-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/jenkins-ci/version-number/1.7/version-number-1.7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/jenkins-ci/version-number/1.7/version-number-1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
