@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.eclipse.jetty.websocket:websocket-server:9.4.34.v20201102">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.34.v20201102/websocket-server-9.4.34.v20201102.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.34.v20201102/websocket-server-9.4.34.v20201102.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.34.v20201102/websocket-server-9.4.34.v20201102-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.34.v20201102/websocket-server-9.4.34.v20201102-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.34.v20201102/websocket-server-9.4.34.v20201102-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/org/eclipse/jetty/websocket/websocket-server/9.4.34.v20201102/websocket-server-9.4.34.v20201102-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

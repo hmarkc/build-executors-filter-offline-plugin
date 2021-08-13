@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.kohsuke.jinterop:j-interop:2.0.8-kohsuke-1">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/kohsuke/jinterop/j-interop/2.0.8-kohsuke-1/j-interop-2.0.8-kohsuke-1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/org/kohsuke/jinterop/j-interop/2.0.8-kohsuke-1/j-interop-2.0.8-kohsuke-1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/kohsuke/jinterop/j-interop/2.0.8-kohsuke-1/j-interop-2.0.8-kohsuke-1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/org/kohsuke/jinterop/j-interop/2.0.8-kohsuke-1/j-interop-2.0.8-kohsuke-1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$PROJECT_DIR$/../../../.m2/repository/org/kohsuke/jinterop/j-interop/2.0.8-kohsuke-1/j-interop-2.0.8-kohsuke-1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../.m2/repository/org/kohsuke/jinterop/j-interop/2.0.8-kohsuke-1/j-interop-2.0.8-kohsuke-1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

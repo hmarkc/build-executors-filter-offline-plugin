@@ -11,10 +11,10 @@ Short-Name: build-executors
 Long-Name: Build Executors
 Url: https://github.com/jenkinsci/build-executors-plugin
 Minimum-Java-Version: 1.8
-Plugin-Version: 1.0-SNAPSHOT (private-61e40770-ch)
+Plugin-Version: 1.0-SNAPSHOT (private-97e362cf-ch)
 Hudson-Version: 2.277.1
 Jenkins-Version: 2.277.1
-Plugin-Developers: 
+Plugin-Developers: Mark Chen::
 Plugin-License-Name: MIT License
 Plugin-License-Url: https://opensource.org/licenses/MIT
 Plugin-ScmUrl: https://github.com/jenkinsci/build-executors-plugin

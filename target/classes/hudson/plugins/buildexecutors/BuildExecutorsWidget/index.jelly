@@ -144,11 +144,19 @@
         <st:nbsp/>
         <st:nbsp/>
         <st:nbsp/>
-        <f:radio title="${it.getSwitchName()}" onclick="load()"/>
-        <j:forEach var="c" items="${it.getActiveComputers()}">
+        <f:radio title="${it.getOfflineNodesSwitch()}" onclick="load(false)"/>
+        <j:if test="${it.hideOfflineNodes}">
+            <br/>
+            <st:nbsp/>
+            <st:nbsp/>
+            <st:nbsp/>
+            <st:nbsp/>
+            <f:radio title="${it.getTemporarilyOfflineNodesSwitch()}" onclick="load(true)"/>
+        </j:if>
+        <j:set var="computers" value="${it.getActiveComputers()}"/>
+        <j:forEach var="c" items="${computers}">
             <j:set var="cDisplayExecutors" value="${c.displayExecutors}"/>
             <tr>
-                <!--                <j:if test="${(computersSize gt 1 and !cDisplayExecutors.isEmpty()) or (c.node == app and c.offline)}">-->
                 <j:if test="${!cDisplayExecutors.isEmpty()}">
                     <th class="pane" colspan="4">
                         <local:computerCaption title="${c.displayName}"/>

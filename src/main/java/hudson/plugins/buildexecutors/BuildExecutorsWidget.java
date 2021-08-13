@@ -13,10 +13,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("unused")
-@Extension(ordinal=99)
+@Extension(ordinal = 99)
 public class BuildExecutorsWidget extends Widget {
 
-    private boolean hideOfflineNodes = false;
+    public boolean hideOfflineNodes = false;
+
+    public boolean hideTemporarilyOfflineNodes = false;
 
     Logger LOGGER = Logger.getLogger(BuildExecutorsWidget.class);
 
@@ -29,12 +31,23 @@ public class BuildExecutorsWidget extends Widget {
     }
 
     @JavaScriptMethod
-    public void showOrHide() {
-        LOGGER.debug("hide value is " + !hideOfflineNodes);
+    public void showOrHideOffline() {
+        LOGGER.debug(!hideOfflineNodes);
         hideOfflineNodes = !hideOfflineNodes;
     }
 
-    public String getSwitchName() {
+    @JavaScriptMethod
+    public void showOrHideTemporarilyOffline() {
+        LOGGER.debug(!hideTemporarilyOfflineNodes);
+        hideTemporarilyOfflineNodes = !hideTemporarilyOfflineNodes;
+    }
+
+    @JavaScriptMethod
+    public void debug(String message) {
+        LOGGER.debug(message);
+    }
+
+    public String getOfflineNodesSwitch() {
         if (hideOfflineNodes) {
             return "show offline nodes";
         } else {
@@ -42,10 +55,20 @@ public class BuildExecutorsWidget extends Widget {
         }
     }
 
+    public String getTemporarilyOfflineNodesSwitch() {
+        if (hideTemporarilyOfflineNodes) {
+            return "show temporarily offline nodes";
+        } else {
+            return "hide temporarily offline nodes";
+        }
+    }
+
     public List<Computer> getActiveComputers() {
         List<Computer> computers = new ArrayList<>();
         for (Computer computer : Jenkins.get().getComputers()) {
-            if (computer.isOnline() || !hideOfflineNodes) {
+            if (computer.isOnline()
+                    || !hideOfflineNodes
+                    || (computer.isTemporarilyOffline() && !hideTemporarilyOfflineNodes)) {
                 computers.add(computer);
             }
         }
