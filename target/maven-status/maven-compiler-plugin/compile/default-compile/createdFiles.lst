@@ -1,5 +1,5 @@
-hudson/plugins/buildexecutors/BuildExecutorsInit.class
 META-INF/annotations/hudson.init.Initializer
 META-INF/annotations/hudson.Extension.txt
+hudson/plugins/buildexecutors/BuildExecutorsInit.class
 hudson/plugins/buildexecutors/BuildExecutorsWidget.class
 META-INF/annotations/hudson.Extension

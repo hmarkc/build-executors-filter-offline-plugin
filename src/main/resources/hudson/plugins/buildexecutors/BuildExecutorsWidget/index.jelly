@@ -1,6 +1,9 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
          xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:local="local">
+    <meta http-equiv='cache-control' content='no-cache'/>
+    <meta http-equiv='expires' content='0'/>
+    <meta http-equiv='pragma' content='no-cache'/>
     <st:documentation>
         Displays the status of executors.
         <st:attribute name="computers">
@@ -135,7 +138,7 @@
             <col width="24"/>
         </colgroup>
 
-        <script type="text/javascript" src="${rootURL}/plugin/build-executors/index.js"/>
+        <script type="text/javascript" src="${rootURL}/plugin/build-executors/index.js?n=1"/>
         <script>
             var widget =
             <st:bind value="${it}"/>

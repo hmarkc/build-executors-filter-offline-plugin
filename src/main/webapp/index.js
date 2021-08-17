@@ -1,8 +1,8 @@
 function load(isTemporary) {
-    if (isTemporary == false) {
+    if (isTemporary === false) {
         widget.showOrHideOffline();
     } else {
         widget.showOrHideTemporarilyOffline();
     }
-    location.reload();
+    setTimeout(function() { window.location.reload() }, 1000);
 }

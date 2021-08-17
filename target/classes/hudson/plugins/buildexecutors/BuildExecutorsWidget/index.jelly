@@ -139,34 +139,27 @@
         <script>
             var widget =
             <st:bind value="${it}"/>
+            function load(isTemporary) {
+                if (isTemporary == false) {
+                    widget.showOrHideOffline();
+                } else {
+                    widget.showOrHideTemporarilyOffline();
+                }
+                update("${it.getActiveComputers()}");
+            }
         </script>
         <st:nbsp/>
         <st:nbsp/>
         <st:nbsp/>
         <st:nbsp/>
         <f:radio title="${it.getOfflineNodesSwitch()}" onclick="load(false)"/>
-        <j:if test="${it.hideOfflineNodes}">
-            <br/>
-            <st:nbsp/>
-            <st:nbsp/>
-            <st:nbsp/>
-            <st:nbsp/>
-            <f:radio title="${it.getTemporarilyOfflineNodesSwitch()}" onclick="load(true)"/>
-        </j:if>
-        <j:set var="computers" value="${it.getActiveComputers()}"/>
-        <j:forEach var="c" items="${computers}">
-            <j:set var="cDisplayExecutors" value="${c.displayExecutors}"/>
-            <tr>
-                <j:if test="${!cDisplayExecutors.isEmpty()}">
-                    <th class="pane" colspan="4">
-                        <local:computerCaption title="${c.displayName}"/>
-                    </th>
-                </j:if>
-            </tr>
-            <j:forEach var="de" items="${cDisplayExecutors}" varStatus="eloop">
-                <j:set var="e" value="${de.executor}"/>
-                <local:executor name="${de.displayName}" url="${de.url}"/>
-            </j:forEach>
-        </j:forEach>
+        <br/>
+        <st:nbsp/>
+        <st:nbsp/>
+        <st:nbsp/>
+        <st:nbsp/>
+        <f:radio title="${it.getTemporarilyOfflineNodesSwitch()}" onclick="load(true)"/>
+        <div id="panel">
+        </div>
     </l:pane>
 </j:jelly>

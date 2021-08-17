@@ -4,7 +4,7 @@ Short-Name: build-executors
 Long-Name: Build Executors
 Url: https://github.com/jenkinsci/build-executors-plugin
 Minimum-Java-Version: 1.8
-Plugin-Version: 1.0-SNAPSHOT (private-97e362cf-ch)
+Plugin-Version: 1.0-SNAPSHOT (private-1d514f91-ch)
 Hudson-Version: 2.277.1
 Jenkins-Version: 2.277.1
 Plugin-Developers: Mark Chen::
