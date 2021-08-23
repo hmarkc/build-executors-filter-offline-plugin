@@ -16,13 +16,14 @@
         <changelist>-SNAPSHOT</changelist>
         <jenkins.version>2.277.1</jenkins.version>
         <java.level>8</java.level>
-        <gitHubRepo>jenkinsci/${project.artifactId}-plugin</gitHubRepo>    </properties>
+        <gitHubRepo>jenkinsci/build-executors-plugin</gitHubRepo>    </properties>
     <name>Build Executors</name>
-    <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <url>https://github.com/jenkinsci/build-executors-plugin</url>
 
     <developers>
         <developer>
             <name>Mark Chen</name>
+            <email>a77069752@gmail.com</email>
         </developer>
     </developers>
 
