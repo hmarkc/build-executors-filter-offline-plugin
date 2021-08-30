@@ -8,7 +8,7 @@
         <relativePath />
     </parent>
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>build-executors</artifactId>
+    <artifactId>build-executors-filter-offline</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>hpi</packaging>
     <properties>
@@ -16,12 +16,14 @@
         <changelist>-SNAPSHOT</changelist>
         <jenkins.version>2.277.1</jenkins.version>
         <java.level>8</java.level>
-        <gitHubRepo>jenkinsci/build-executors-plugin</gitHubRepo>    </properties>
-    <name>Build Executors</name>
-    <url>https://github.com/jenkinsci/build-executors-plugin</url>
+        <gitHubRepo>jenkinsci/build-executors-filter-offline-plugin</gitHubRepo>
+    </properties>
+    <name>Build Executors Filter Offline</name>
+    <url>https://github.com/jenkinsci/build-executors-filter-offline-plugin</url>
 
     <developers>
         <developer>
+            <id>hmarkc</id>
             <name>Mark Chen</name>
             <email>a77069752@gmail.com</email>
         </developer>
