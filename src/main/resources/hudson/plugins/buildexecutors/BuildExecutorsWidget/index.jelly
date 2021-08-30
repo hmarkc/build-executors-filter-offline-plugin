@@ -138,7 +138,7 @@
             <col width="24"/>
         </colgroup>
 
-        <script type="text/javascript" src="${rootURL}/plugin/build-executors/index.js?n=1"/>
+        <script type="text/javascript" src="${rootURL}/plugin/build-executors-filter-offline/index.js?n=1"/>
         <script>
             var widget =
             <st:bind value="${it}"/>
@@ -147,14 +147,14 @@
         <st:nbsp/>
         <st:nbsp/>
         <st:nbsp/>
-        <f:radio title="${it.getOfflineNodesSwitch()}" onclick="load(false)"/>
+        <f:radio title="${it.getOfflineNodesSwitch()}" onclick="toggleFilterOffline(false)"/>
         <j:if test="${it.hideOfflineNodes}">
             <br/>
             <st:nbsp/>
             <st:nbsp/>
             <st:nbsp/>
             <st:nbsp/>
-            <f:radio title="${it.getTemporarilyOfflineNodesSwitch()}" onclick="load(true)"/>
+            <f:radio title="${it.getTemporarilyOfflineNodesSwitch()}" onclick="toggleFilterOffline(true)"/>
         </j:if>
         <j:set var="computers" value="${it.getActiveComputers()}"/>
         <j:forEach var="c" items="${computers}">

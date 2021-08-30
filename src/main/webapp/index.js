@@ -1,4 +1,4 @@
-function load(isTemporary) {
+function toggleFilterOffline(isTemporary) {
     if (isTemporary === false) {
         widget.showOrHideOffline();
     } else {
